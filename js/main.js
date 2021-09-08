@@ -62,9 +62,29 @@ $(function () {
   $('.slider__inner').slick({
     nextArrow: '<button type="button" class="slick-btn slick-next"></button>',
     prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
-    dots: true,
-    infinite: false,
-    autoplay: true,
+    centerMode: true,
+    centerPadding: '200px',
+    slidesToShow: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '100px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '45px',
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 
 

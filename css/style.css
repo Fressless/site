@@ -242,7 +242,10 @@ nav a{
         border-top: 1px solid red;
         border-bottom: 1px solid red;
     }
+
+    
 }
+
 
 .slider__item1{
     position: relative;
@@ -250,7 +253,19 @@ nav a{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 773px;
+    min-height: 774px;
+    max-width: 1920px;
+}
+
+@media (max-width:768px){
+    .slider__item1{
+        max-width: 768px;
+        min-height: 309px;
+    }
+}
+
+.preview__buttons{
+    padding-top: 250px;
 }
 
 .slider__title1{
@@ -274,8 +289,8 @@ nav a{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 773px;
-    
+    min-height: 387px;
+    max-width: 960px;
 }
 
 .slider__title2{
@@ -314,7 +329,8 @@ nav a{
     position: relative;
     background-position: center;
     background-image: url("../images/3.png");
-    min-height: 773px;
+    min-height: 387px;
+    max-width: 960px;
 }
 
 .slider__title3{
@@ -347,7 +363,8 @@ nav a{
     position: relative;
     background-image: url("../images/4.png");
     background-position: center;
-    min-height: 773px;
+    min-height: 387px;
+    max-width: 960px;
 }
 
 .slider__title4{
@@ -414,13 +431,52 @@ nav a{
 }
 
 .slider{
-    position: relative;
+    max-width: 1800px;
+    margin: 20px auto;
 }
 
 .slider__inner{
-    position: relative;
-    color: #FFFFFF;
+    
 }
+
+.slider__inner .items{
+    position: relative;
+    margin: 20px;
+}
+
+.slider__inner .items a{
+    text-decoration: none;
+}
+
+.slider__inner .items img{
+    max-width: 100%;
+    height: auto;
+    transition: all linear .4s;
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+
+.slider__inner .slick-center img{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.slider__inner .slick-center .sl__text{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    text-shadow:rgba(0, 0, 0, .5);
+    display: none;
+    transition: all linear 1s;
+}
+
+.slider__inner .slick-center .sl__text{
+    display: block;
+}
+
 .slider .slick-btn{
     position: absolute;
     z-index: 3;
