@@ -601,7 +601,7 @@ body._pc .slider__inner .items:hover img{
     }      
 
 
-.slider__inner .items:hover .sl__slog{
+body._pc .slider__inner .items:hover .sl__slog{
     display: none;
 }
 
@@ -612,7 +612,7 @@ body._pc .slider__inner .items:hover img{
     opacity: 0;
 }
 
-.slider__inner .items:hover .sl__zag{
+body._pc .slider__inner .items:hover .sl__zag{
     margin-top: -10px;
     opacity: 1;
 }
@@ -622,7 +622,7 @@ body._pc .slider__inner .items:hover img{
     margin-top: 150px;
     opacity: 0;
 }
-.slider__inner .items:hover .sl__desc{
+body._pc .slider__inner .items:hover .sl__desc{
     margin-top: 10px;
     opacity: 1;
 }
