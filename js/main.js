@@ -53,12 +53,7 @@ if (burgerMenu){
 
 $(function () {
 
-  $(document).ready(function () {
-    $('.header__burger').click(function () {
-      $('.header__burger').toggleClass('open-menu');
-      $('nav').toggleClass('open-menu');
-    });
-  });
+
 
   $(document).ready(function () {
     var show = true;
@@ -83,8 +78,12 @@ $(function () {
 
 
   let header = $('.header');
-
+  
+  if(document.documentElement.clientWidth <= 768){
+    header.addClass('header__fixed');
+  }
   $(window).scroll(function () {
+
     if ($(this).scrollTop() >= 0) {
       header.addClass('header__fixed');
       if ($(this).scrollTop() > 60) {

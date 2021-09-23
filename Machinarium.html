@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <header class="header">
         <div class="header__container">
@@ -19,9 +18,6 @@
                     <a href="index.html">
                         <img src="images/logo.png" alt="">
                     </a>
-                </div>
-                <div class="header__burger">
-                    <span></span>
                 </div>
                 <nav>
                     <ul class="topmenu">
@@ -36,7 +32,7 @@
                         </li>
                         <li><a href="index.html#promotions">Акции</a></li>
                         <li><a href="index.html#certificates">Сертификаты</a></li>
-                        <li><a href="index.html#location">Как добраться?</a></li>
+                        <li><a href="javascript:void(0)" onclick="slowScroll('#location')">Как добраться?</a></li>
                     </ul>
                 </nav>
                 <div class="number">
@@ -61,6 +57,7 @@
                     <nav>
                         <ul class="topmenu">
                             <li><a href="index.html" class="down">Локации</a>
+                                <span class="menu__arrow"></span>
                                 <ul class="submenu">
                                     <li><a href="Experiment.html">Эксперимент</a></li>
                                     <li><a href="horror.html">Смешные ужасы</a></li>
@@ -70,7 +67,7 @@
                             </li>
                             <li><a href="index.html#promotions">Акции</a></li>
                             <li><a href="index.html#certificates">Сертификаты</a></li>
-                            <li><a href="index.html#location">Как добраться?</a></li>
+                            <li><a href="javascript:void(0)" onclick="slowScroll('#location')">Как добраться?</a></li>
                         </ul>
                     </nav>
                     <div class="number">
@@ -136,6 +133,12 @@
         </div>
     </section>
     <hr>
+    <div class="booking" id="booking">
+        <iframe frameborder="no" scrolling="yes"
+            src="https://xn--b1acdcqi5ci.xn--p1ai/api/smart_widget/5d8cdc47d74af05952792be1/redirect"
+            style="margin: 0px; width: 920px; max-width: 100%; height: 750px;"></iframe>
+    </div>
+    <hr>
     <section id="location" class="location">
         <div class="container">
             <div class="location__top">
@@ -165,19 +168,11 @@
                     </div>
                 </div>
                 <div class="location__map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2203.702854969562!2d84.96570895185472!3d56.4728799806577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43269345a6c0d733%3A0x9cde0d3f1fe18c1e!2z0YPQuy4g0JTQt9C10YDQttC40L3RgdC60L7Qs9C-LCA30LAsINCi0L7QvNGB0LosINCi0L7QvNGB0LrQsNGPINC-0LHQuy4sIDYzNDA2MQ!5e0!3m2!1sru!2sru!4v1631302078568!5m2!1sru!2sru"
-                        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/67/tomsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Томск</a><a href="https://yandex.ru/maps/67/tomsk/house/ulitsa_dzerzhinskogo_7a/bE0YfwFnQUcCQFtsfXh2c3RmbQ==/?ll=84.967825%2C56.472859&utm_medium=mapframe&utm_source=maps&z=17.15" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Дзержинского, 7А — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUmzUB2SB" width="800" height="600" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
                 </div>
             </div>
         </div>
-    </section>
-    <hr>
-    <div class="booking" id="booking">
-        <iframe frameborder="no" scrolling="yes"
-            src="https://xn--b1acdcqi5ci.xn--p1ai/api/smart_widget/5d8cdc47d74af05952792be1/redirect"
-            style="margin: 0px; width: 920px; max-width: 100%; height: 750px;"></iframe>
-    </div>
+    </section>    
     <footer>
         <div class="container">
             <div class="footer__inner">

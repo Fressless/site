@@ -302,7 +302,7 @@ body._pc .submenu a:hover {background: #e8e8e8;}
         top: 0;
         right: -100%;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         background-color: #444e5a;
         padding: 100px 30px 0px 0px;
         transition: right 0.4s ease 0s;
@@ -422,8 +422,7 @@ body._pc .submenu a:hover {background: #e8e8e8;}
     text-align: center;
 }
 
-.specific__btn,
-.specific__btn__feedback{
+.specific__btn{
     position: absolute;
     font-size: 18px;
     font-weight: 700;
@@ -442,13 +441,8 @@ body._pc .submenu a:hover {background: #e8e8e8;}
     padding: 8px 11px;
 }
 
-.specific__btn__feedback{
-    bottom: 25px;
-    padding: 8px 42px;
-}
 
-.specific__btn:hover,
-.specific__btn__feedback:hover{
+.specific__btn:hover{
     border: 2px solid #FFFFFF;
     background-color: #FFFFFF;
     color: #303841;
@@ -465,10 +459,15 @@ body._pc .submenu a:hover {background: #e8e8e8;}
         background-position: 40% 0%;
     }      
 }
-@media (max-width:1370px){
-    .experiment__preview{
-        background-position: 25% 0%;
-    }  
+@media (max-width:500px){
+    .horror__preview{
+        background: url(../images/2_small.png) center/cover no-repeat;   
+        background-position: center;
+    } 
+    .abode__preview{
+        background: url(../images/4_small.png) center/cover no-repeat;   
+        background-position: center;
+    }   
 }
 
 @media (max-width: 860px){
@@ -558,7 +557,7 @@ body._pc .submenu a:hover {background: #e8e8e8;}
     text-decoration: none;
 }
 
-.slider__inner .items:hover img{
+body._pc .slider__inner .items:hover img{
     filter: blur(8px);
 }
 
@@ -568,6 +567,10 @@ body._pc .submenu a:hover {background: #e8e8e8;}
     transition: all linear .4s;
     transform: scale(0.9);
     opacity: 0.5;
+}
+
+.slider__inner .items picture img{
+    width: 100%;
 }
 
 .slider__inner .slick-center img{
@@ -750,6 +753,7 @@ hr:before {
 
 .location{
     color: #fff;
+    margin-bottom: 30px;
 }
 
 .location__top{
@@ -918,8 +922,14 @@ footer{
 
 .booking{
     text-align: center;
-    margin-top: 50px;
-    background: url(../images/shattered.png);
+    margin-top: -20px;
+    margin-bottom: -130px;
+
+}
+@media (max-width: 860px){
+    .booking{
+        margin-bottom: 0px;
+    }
 }
 
 .wrapper{
